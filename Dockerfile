@@ -10,4 +10,5 @@ COPY entrypoint.sh /entrypoint.sh
 RUN pip install --upgrade pip
 RUN pip install chalice
 
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
